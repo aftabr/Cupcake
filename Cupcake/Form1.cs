@@ -31,6 +31,16 @@ namespace Cupcake
             {
                 MessageBox.Show("Invalid Entry, please enter the cupcake name!");
             }
+
+            if (cupcakePrice.Text != String.Empty)
+            {
+                list.Add(cupcakePrice.Text);
+                MessageBox.Show("Cupcake Price:" + cupcakePrice.Text);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Entry, please eneter the cupcake price!");
+            }
         }
     }
 }
