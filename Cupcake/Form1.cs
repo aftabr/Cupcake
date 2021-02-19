@@ -21,6 +21,8 @@ namespace Cupcake
         List<String> list;
         private void button1_Click(object sender, EventArgs e)
         {
+
+           //Implemented the Cupcake Name to check if it has a value then add it to the list
             if (cupcakeName.Text != String.Empty)
             {
                 list.Add(cupcakeName.Text);
@@ -32,6 +34,8 @@ namespace Cupcake
                 MessageBox.Show("Invalid Entry, please enter the cupcake name!");
             }
 
+
+            //Implemented the Cupcake Price to check if it has a value then add it to the list
             if (cupcakePrice.Text != String.Empty)
             {
                 list.Add(cupcakePrice.Text);
@@ -39,7 +43,18 @@ namespace Cupcake
             }
             else
             {
-                MessageBox.Show("Invalid Entry, please eneter the cupcake price!");
+                MessageBox.Show("Invalid Entry, please enter the cupcake price!");
+            }
+
+
+            if (cupcakeDate.Text != String.Empty)
+            {
+                list.Add(cupcakeDate.Text);
+                MessageBox.Show("Cupcake Date:" + cupcakeDate.Text);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Entry, please enter the cupcake date!");
             }
         }
     }
