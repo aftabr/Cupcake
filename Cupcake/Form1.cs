@@ -46,16 +46,27 @@ namespace Cupcake
                 MessageBox.Show("Invalid Entry, please enter the cupcake price!");
             }
 
-
+            //Implemented the Cupcake Created Date to check if it has a value then add it to the list
             if (cupcakeDate.Text != String.Empty)
             {
                 list.Add(cupcakeDate.Text);
-                MessageBox.Show("Cupcake Date:" + cupcakeDate.Text);
+                MessageBox.Show("Cupcake Created Date:" + cupcakeDate.Text);
             }
             else
             {
-                MessageBox.Show("Invalid Entry, please enter the cupcake date!");
+                MessageBox.Show("Invalid Entry, please enter the cupcake created date!");
             }
+
+            if (cupcakeModified.Text != String.Empty)
+            {
+                list.Add(cupcakeModified.Text);
+                MessageBox.Show("Cupcake Modified Date:" + cupcakeModified.Text);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Entry, please enter the cupcake modified date!");
+            }
+
         }
     }
 }
