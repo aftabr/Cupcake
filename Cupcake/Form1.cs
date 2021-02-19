@@ -15,6 +15,13 @@ namespace Cupcake
         public Form1()
         {
             InitializeComponent();
+            list = new List<string>();
+        }
+
+        List<String> list;
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
