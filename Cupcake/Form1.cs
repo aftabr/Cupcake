@@ -57,6 +57,7 @@ namespace Cupcake
             }
             else {
                 MessageBox.Show("Cupcake Name: " + cupcakeName.Text + ", Cupcake Price: $" + cupcakePrice.Text + ", Cupcake Create Date: " + cupcakeDate.Text + ", Cupcake Modified Date: " + cupcakeModified.Text);
+                
             }
 
             if(cupcakePrice.Text == String.Empty) {
