@@ -26,45 +26,60 @@ namespace Cupcake
             if (cupcakeName.Text != String.Empty)
             {
                 list.Add(cupcakeName.Text);
-                MessageBox.Show("Cupcake Name:" + cupcakeName.Text);
 
             }
-            else
-            {
-                MessageBox.Show("Invalid Entry, please enter the cupcake name!");
-            }
-
-
+           
             //Implemented the Cupcake Price to check if it has a value then add it to the list
             if (cupcakePrice.Text != String.Empty)
             {
                 list.Add(cupcakePrice.Text);
-                MessageBox.Show("Cupcake Price:" + cupcakePrice.Text);
+                
             }
-            else
-            {
-                MessageBox.Show("Invalid Entry, please enter the cupcake price!");
-            }
+            
 
             //Implemented the Cupcake Created Date to check if it has a value then add it to the list
             if (cupcakeDate.Text != String.Empty)
             {
                 list.Add(cupcakeDate.Text);
-                MessageBox.Show("Cupcake Created Date:" + cupcakeDate.Text);
-            }
-            else
-            {
-                MessageBox.Show("Invalid Entry, please enter the cupcake created date!");
             }
 
+            //Implemented the Cupcake Modified Date to check if it has a value then add it to the list
             if (cupcakeModified.Text != String.Empty)
             {
                 list.Add(cupcakeModified.Text);
-                MessageBox.Show("Cupcake Modified Date:" + cupcakeModified.Text);
             }
-            else
+          
+            if (cupcakeName.Text == String.Empty)
             {
+
+                MessageBox.Show("Invalid Entry, please enter the cupcake name!");
+
+            }
+            else {
+                MessageBox.Show("Cupcake Name: " + cupcakeName.Text + ", Cupcake Price: $" + cupcakePrice.Text + ", Cupcake Create Date: " + cupcakeDate.Text + ", Cupcake Modified Date: " + cupcakeModified.Text);
+            }
+
+            if(cupcakePrice.Text == String.Empty) {
+
+                MessageBox.Show("Invalid Entry, please enter the cupcake price!");
+            }
+            else {
+                MessageBox.Show("Cupcake Name: " + cupcakeName.Text + ", Cupcake Price: $" + cupcakePrice.Text + ", Cupcake Create Date: " + cupcakeDate.Text + ", Cupcake Modified Date: " + cupcakeModified.Text);
+            }
+
+            if(cupcakeDate.Text == String.Empty) {
+               
+             MessageBox.Show("Invalid Entry, please enter the cupcake created date!");
+            }else {
+                MessageBox.Show("Cupcake Name: " + cupcakeName.Text + ", Cupcake Price: $" + cupcakePrice.Text + ", Cupcake Create Date: " + cupcakeDate.Text + ", Cupcake Modified Date: " + cupcakeModified.Text);
+            }
+
+            if(cupcakeModified.Text == String.Empty) {
                 MessageBox.Show("Invalid Entry, please enter the cupcake modified date!");
+            }
+            else {
+
+                MessageBox.Show("Cupcake Name: " + cupcakeName.Text + ", Cupcake Price: $" + cupcakePrice.Text + ", Cupcake Create Date: " + cupcakeDate.Text + ", Cupcake Modified Date: " + cupcakeModified.Text);
             }
 
         }
