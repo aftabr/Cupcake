@@ -21,7 +21,16 @@ namespace Cupcake
         List<String> list;
         private void button1_Click(object sender, EventArgs e)
         {
+            if (cupcakeName.Text != String.Empty)
+            {
+                list.Add(cupcakeName.Text);
+                MessageBox.Show("Cupcake Name:" + cupcakeName.Text);
 
+            }
+            else
+            {
+                MessageBox.Show("Invalid Entry, please enter the cupcake name!");
+            }
         }
     }
 }
